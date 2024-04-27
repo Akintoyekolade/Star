@@ -61,37 +61,3 @@ return (
 );
 
 
-
-//confetti
-
-// Assume you have a button for submitting the form with an ID "submit-button"
-
-const form = document.getElementById('quiz-form');
-
-// Event listener for form submission
-form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the default form submission behavior
-  // Trigger the confetti effect on form submission
-  confetti.start();
-
-  // Redirect to the next page after 3 seconds (adjust the duration as needed)
-  setTimeout(function() {
-    window.location.href = 'message.html'; // Replace 'next-page.html' with the actual URL of the next page
-  }, 3000); // 3 seconds
-});
-
-// Function to show confetti
-function showConfetti() {
-  const confettiSettings = {
-    target: 'confetti-canvas',
-    respawn: true,
-    colors: ['#ff0000', '#00ff00', '#0000ff'], 
-  };
-
-  const confetti = new ConfettiGenerator(confettiSettings);
-  confetti.render();
-  setTimeout(() => {
-    confetti.clear();
-  }, 5000);
-}
-
