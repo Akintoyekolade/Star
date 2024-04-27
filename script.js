@@ -44,3 +44,20 @@ quizForm.addEventListener('submit', (event) => {
 
 // Display the quiz questions
 displayQuizQuestions();
+
+
+return (
+  <form
+    data-netlify="true"
+    name="pizzaOrder"
+    method="post"
+    onSubmit={handleSubmit}
+  >
+    <input type="hidden" name="form-name" value="pizzaOrder" />
+    <label>
+      What order did the pizza give to the pineapple?
+      <input name="order" type="text" onChange={handleChange} />
+    </label>
+    <input type="submit" />
+  </form>
+);
