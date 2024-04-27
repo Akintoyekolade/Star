@@ -50,7 +50,7 @@ return (
   <form
     data-netlify="true"
     name="Star Quiz"
-    action="/message.html"
+    action="/message"
     method="post"
     onSubmit="submit"
   >
