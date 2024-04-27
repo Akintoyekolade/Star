@@ -49,11 +49,12 @@ displayQuizQuestions();
 return (
   <form
     data-netlify="true"
-    name="pizzaOrder"
+    name="Star Quiz"
+    action="/message.html"
     method="post"
-    onSubmit={handleSubmit}
+    onSubmit="submit"
   >
-    <input type="hidden" name="form-name" value="pizzaOrder" />
+    <input type="hidden" name="form-name" value="Star Quiz" />
     <label>
       What order did the pizza give to the pineapple?
       <input name="order" type="text" onChange={handleChange} />
