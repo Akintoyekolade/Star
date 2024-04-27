@@ -27,7 +27,7 @@ const messageText = `
         
     <p>Hear me out...😅</p>
 
-    <div style= "border-radius: 8px; height:190px; margin-bottom:8px;">
+    <div>
         <img src="assets/hear-me-out.gif" style="width: 100%; height: auto; border-radius: 8px; display: block; margin: 16px auto;" alt="Hear me out">
     </div>
 
