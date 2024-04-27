@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Star Quiz</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
+
+
+
+
 <body> 
   <div class="preloader" id="preloader">
     <h2>Hey Star⭐</h2>
@@ -20,6 +23,15 @@
     </div>
     <div id="quiz-container">
 
+    
+    <form 
+      id="quiz-form" netlify    
+      data-netlify="true"
+      name="Star Quiz"
+      action="/message"
+      method="post">
+
+      <div id="question-container">
         <div class="questions">
           <label for="Q1">What do you think is one of my long-term career goals?
             <br>
@@ -74,9 +86,8 @@
 
 
         <!-- Question elements will be dynamically created here -->
-        <button type="submit" id="submit-btn">Submit</button>
       </div>
-      
+      <button type="submit" id="submit-btn">Submit</button>
     </form>
 
    
@@ -99,8 +110,6 @@
       }, 5000); // Change the duration as needed
     });
   </script>
-
-
 
   
 
