@@ -43,7 +43,7 @@ quizForm.addEventListener('submit', (event) => {
 displayQuizQuestions();
 
 
-`return (
+return (
   <form
     data-netlify="true"
     name="Star Quiz"
@@ -58,4 +58,4 @@ displayQuizQuestions();
     </label>
     <input type="submit" />
   </form>
-);`
+);

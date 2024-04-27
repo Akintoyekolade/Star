@@ -66,6 +66,11 @@ button {
   transition: ease-in-out 0.2s;
 }
 
+a {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
 button:hover {
   background-color: #1c3f4f;
   cursor: pointer;
@@ -80,13 +85,32 @@ button:hover {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  background-image: url('assets/5.png');
+  background-position: calc(100% - 40px) 70px; /* Moves the background 30px from the right and 30px from the top */
+  background-repeat: no-repeat;
+  background-size: 70px; 
+  background-blend-mode: multiply;
+  
 }
 
 .message-sub {
-  font-size: 14px;
-  margin-top: -16px;
+  font-size: 12px;
+  margin-top: -8px;
   padding-bottom: 16px;
 }
+
+.meme img{
+  width: 150px;
+}
+
+.meme {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 32px;
+  justify-content: center;
+}
+
+
 
 @media (max-width: 600px) {
 
@@ -94,7 +118,7 @@ button:hover {
     margin: 16px;
   }
   body h1 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   p {
@@ -128,6 +152,10 @@ button:hover {
 
 .questions {
   font-size: 12px;
+}
+
+.meme img{
+  width: 100px;
 }
 
 
