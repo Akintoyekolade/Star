@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Star Quiz</title>
   <link rel="stylesheet" href="style.css">
-  
+
 </head>
 <body> 
-  <div class="preloader">
+  <div class="preloader" id="preloader">
     <h2>Hey Star⭐</h2>
-    <p>This was specifically made for you</p>
+    <p>This was specifically made for you 💙</p>
   </div>
 
-  <div class="hidden-content">
+  <div class="hidden-content" id="hidden-content">
     <!-- Your existing content goes here -->
     <div class="top-heading">
         <h2>Let's play a game😅</h2>
@@ -83,12 +83,20 @@
   </div>
 
   <script>
-    // Hide the preloader after 5 seconds
     window.addEventListener('load', function() {
       setTimeout(function(){
-        document.querySelector('.preloader').style.display = 'none';
-        document.querySelector('.hidden-content').style.display = 'block';
-      }, 5000);
+        // Select the preloader and main content elements
+        const preloader = document.getElementById('preloader');
+        const content = document.getElementById('hidden-content');
+
+        // Fade out the preloader
+        preloader.style.opacity = 0;
+        preloader.style.pointerEvents = 'none'; // Make the preloader not clickable
+
+        // Display the main content with a slide-in animation
+        content.style.display = 'block';
+        content.classList.add('slideIn');
+      }, 5000); // Change the duration as needed
     });
   </script>
 
