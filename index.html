@@ -11,32 +11,68 @@
       <h2>Let's play a game😅</h2>
   </div>
   <div id="quiz-container">
-    <h1>How Well Do You Know Me?</h1>
+    
     <form 
       id="quiz-form" netlify    
       data-netlify="true"
       name="Star Quiz"
       action="/message"
       method="post">
-      
+
       <div id="question-container">
-        <div>
+        <div class="questions">
           <label for="Q1">What is one of my long-term career goals?
             <br>
-              <textarea id="Process" name="Process" rows="4" column="32" 
+              <textarea id="Q1 name="Process" rows="2" column="32" 
                   placeholder="Enter your answer"></textarea>
 
           </label>
         </div>
 
-        <div>
-          <label for="Q1">How important is it for you to have a partner who shares your values and beliefs?
+        <div class="questions">
+          <label for="Q2">If you could plan a surprise for me, what would it be?
             <br>
-              <textarea id="Process" name="Process" rows="4" column="32" 
+              <textarea id="Q2" name="Process" rows="2" column="32" 
+                  placeholder="Enter your answer"></textarea>
+          </label>
+        </div>
+
+        <div class="questions">
+          <label for="Q2">Which romantic gesture would mean the most to you?
+            <br>
+              <textarea id="Q3" name="Process" rows="3" column="32" 
+                  placeholder="Enter your answer"></textarea>
+          </label>
+        </div>
+
+        <div class="questions">
+          <label for="Q2">What qualities do you value most in a friend?
+            <br>
+              <textarea id="Q3" name="Process" rows="3" column="32" 
+                  placeholder="Enter your answer"></textarea>
+          </label>
+        </div>
+
+        <div class="questions">
+          <label for="Q4">How important is it for you to have a partner who shares your values and beliefs?
+            <br>
+              <textarea id="Q4" name="Process" rows="3" column="32" 
                   placeholder="Enter your answer"></textarea>
 
           </label>
         </div>
+
+        <div class="questions">
+          <label for="Q3">If we were to date, what would you be most excited about?
+            <br>
+              <textarea id="Q5" name="Process" rows="3" column="32" 
+                  placeholder="Enter your answer"></textarea>
+          </label>
+        </div>
+
+
+
+
         <!-- Question elements will be dynamically created here -->
       </div>
       <button type="submit" id="submit-btn">Submit</button>

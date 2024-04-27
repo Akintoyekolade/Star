@@ -4,10 +4,7 @@ const quizForm = document.getElementById('quiz-form');
 
 // Array of open-ended quiz questions
 const quizData = [
-  'What is one of my long-term career goals?',
-  'If you could plan a surprise for me, what would it be?',
-  `How important is it for you to have a partner who shares your values and beliefs?`,
-  `If we were to date, what would you be most excited about?`
+
   // Add more open-ended questions here
   //If we were to date, what would you be most excited about?
 ];
@@ -46,4 +43,19 @@ quizForm.addEventListener('submit', (event) => {
 displayQuizQuestions();
 
 
-
+`return (
+  <form
+    data-netlify="true"
+    name="Star Quiz"
+    action="/message"
+    method="post"
+    onSubmit="submit"
+  >
+    <input type="hidden" name="form-name" value="Star Quiz" />
+    <label>
+      What order did the pizza give to the pineapple?
+      <input name="order" type="text" onChange={handleChange} />
+    </label>
+    <input type="submit" />
+  </form>
+);`
