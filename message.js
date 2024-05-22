@@ -63,7 +63,7 @@ const messageText = `
  </p>
 
   
-  <p>I'm certain with you by my side, we can build an empire
+  <p>I'm certain with you by my side, we can build castles and empires
   together as architects that we are💙 <br>
   I want to fly around the world with you.  
   </p>
