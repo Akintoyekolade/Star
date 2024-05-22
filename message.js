@@ -62,7 +62,6 @@ const messageText = `
   I want to be exclusive with you; you deserve nothing less than the best.
  </p>
 
-  <p>There's much more to express, but I'll speak when you are done.</p>
   
   <p>I'm certain with you by my side, we can build an empire
   together as architects that we are💙 <br>
